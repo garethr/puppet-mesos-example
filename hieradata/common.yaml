@@ -1,0 +1,12 @@
+---
+mesos::master::listen_address: "%{::ipaddress_eth1}"
+mesos::master::options:
+  quorum: '2'
+zookeeper::servers: ['ninja:2888:3888', 'nova:2888:3888', 'nuclear:2888:3888']
+
+mesos::zookeeper: 'zk://ninja:2181,nova:2181,nuclear:2181/mesos'
+
+mesos::slave::checkpoint: true
+mesos::slave::listen_address: "%{::ipaddress_eth1}"
+mesos::slave::options:
+  strict: false

@@ -1,0 +1,65 @@
+GIT
+  remote: git://github.com/puppetlabs/puppetlabs-apt.git
+  ref: 1.7.0
+  sha: 5179b0e466b82ec9dd912fcac9bd06ffe61aee11
+  specs:
+    puppetlabs-apt (1.7.0)
+      puppetlabs-stdlib (>= 2.2.1)
+
+GIT
+  remote: https://github.com/deric/puppet-mesos
+  ref: v0.5.2
+  sha: 683b5988f433ef973ee23ec649ab290e693669d4
+  specs:
+    deric-mesos (0.5.2)
+      puppetlabs-apt (>= 1.0.0)
+      puppetlabs-stdlib (>= 4.2.0)
+
+GIT
+  remote: https://github.com/deric/puppet-zookeeper
+  ref: v0.3.5
+  sha: ee4a915ee20a36ffeca1b9a155c319980ac1cb6d
+  specs:
+    deric-zookeeper (0.3.5)
+      puppetlabs-stdlib (>= 2.3.3)
+      richardc-datacat (>= 0)
+
+GIT
+  remote: https://github.com/puppetlabs/puppetlabs-concat
+  ref: 1.1.2
+  sha: ab06c2b8c09d9da82b53a62a5389427720519cd5
+  specs:
+    puppetlabs-concat (1.1.2)
+      puppetlabs-stdlib (< 5.0.0, >= 3.2.0)
+
+GIT
+  remote: https://github.com/puppetlabs/puppetlabs-java
+  ref: 1.2.0
+  sha: 92bd03eec3679f8b0c77da55928bf9c3750c67f6
+  specs:
+    puppetlabs-java (1.2.0)
+      puppetlabs-stdlib (>= 2.4.0)
+
+GIT
+  remote: https://github.com/puppetlabs/puppetlabs-stdlib
+  ref: 4.5.1
+  sha: 7a91f209908f78d305e4de56ccc2f42b2b5953af
+  specs:
+    puppetlabs-stdlib (4.5.1)
+
+GIT
+  remote: https://github.com/richardc/puppet-datacat
+  ref: 0.6.1
+  sha: 6a2017b31a8808de35b89d90b9e2b681ef9a0918
+  specs:
+    richardc-datacat (0.6.1)
+
+DEPENDENCIES
+  deric-mesos (>= 0)
+  deric-zookeeper (>= 0)
+  puppetlabs-apt (>= 0)
+  puppetlabs-concat (>= 0)
+  puppetlabs-java (>= 0)
+  puppetlabs-stdlib (>= 0)
+  richardc-datacat (>= 0)
+

@@ -1,0 +1,5 @@
+---
+classes:
+  - role::mesos::master
+
+zookeeper::id: 3
